@@ -5,11 +5,9 @@
   <meta charset="UTF-8">
   <meta name="description" content="Astro description">
   <meta name="viewport" content="width=device-width">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+ 
   <meta name="generator" content="Astro v4.5.16">
-  <title>Positivus</title>
-  <meta name="description"
-    content="A beautiful and functional landing page design created specifically for digital marketing agencies. With its clean and modern design, Positivus is the perfect template to showcase your agency's services and case studies to potential clients. Built with astro and tailwindcss">
+
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet">
   <meta name="astro-view-transitions-enabled" content="true">
   <meta name="astro-view-transitions-fallback" content="animate">
@@ -649,60 +647,141 @@
         <div class="hidden md:grid md:justify-items-end md:w-4/12 md:py-2"> <img src="images/contact.svg" alt="c"
             width="80%"> </div>
       </div>
-      
-      
-      <div class="" style="background-color: #191a23;color: white;padding: 2rem;display: flex;flex-direction: column;border-top-left-radius: 45px;border-top-right-radius: 45px;">
-        <div style="margin-bottom: 2rem;">
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default" style="margin-left: 35rem;">
-            <ul
-              class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0  ">
-              <li> <a  class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0" style="text-decoration: underline;">About us</a>
-              </li>
-              <li> <a class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0" style="text-decoration: underline;">Services</a>
-              </li>
-              <li> <a  class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0" style="text-decoration: underline;">Use
-                  Cases</a> </li>
-              <li> <a  class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0" style="text-decoration: underline;">Pricing</a>
-              </li>
-              <li> <a  class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0" style="text-decoration: underline;">Blog</a> </li>
-              <li> <a
-                  class="md:hidden px-5 py-2 rounded-2xl border border-zinc-900 bg-white  text-black  inline-flex"
-                 
-                  <h2 class="text-center text-xl font-normal leading-7">Request a quot</h2>
-                </a> </li>
-            </ul>
-          </div>
-        </div>
-        <div style="display: flex;flex-direction: row;">
+<!--       
+      //---------------------------------- script--------------------------------------------- -->
+      <script>
+        function setFlexDirection() {
+            var isMobileView = window.innerWidth <= 615;
+            document.getElementById('myDiv').style.cssText = `flex-direction: ${isMobileView ? 'column' : 'row'}; background-color: ${isMobileView ? 'lightblue' : 'lightgreen'};`;
 
-<div style="width: 30%;">
-  <span
-  class="text-1xl sm:text-4xl px-1.5 font-medium bg-lime rounded-md" style="color: #191a23;"> Contact us</span>
-  <p class="font-normal text-center md:text-start lg:w-/3" style="font-size: 1rem;margin-top: 1rem;"> Email: info@positivus.com  </p>
-  <p class="font-normal text-center md:text-start lg:w-2/3" style="font-size: 1rem;margin-top:1lvw;"> Phone: 555-567-8901</p>
-  <p class="font-normal text-center md:text-start lg:w-3/3" style="font-size: 1rem;margin-top:1lvw;">Address: 1234 Main St <br>
-    Moonstone City, Stardust State 12345</p>
-</div>
+            document.getElementById('anotherDiv').style.flexDirection = isMobileView ? 'column' : 'row';
+        }
 
-<div style="flex: 1;">
+        // Initial setting
+        setFlexDirection();
 
-<div style="background-color: #292a32; width: 70%;border-radius: 10px;padding: 10px;height: 80%;align-self: flex-end;margin-left: 150px;justify-content:center;align-items: center;display: flex;flex-direction: row;padding-left: 40px;padding-right: 40px;">
-  <div class="w-full justify-center md:justify-end items-center inline-flex" style="width: 150%;"> <button
-    class="px-0 py-5  rounded-2xl text-center text-white border text-1xl font-normal leading-7" style="background-color: #292a32;width: 100%;margin-right: 10px;">Email
-  </button> </div>
-  <div class="w-full justify-center md:justify-end items-center inline-flex"> <button
-    class="px-5 py-5 bg-lime rounded-2xl text-center text-black  text-1xl font-normal leading-7">Subscribe to news
-  </button> </div>
-</div>
-</div>
-        </div>
-       
-        <div style="width: 100%;background-color: #fff;height: 0.5px;margin-top: 20px;"></div>
-        <p class="font-normal text-center md:text-start lg:w-/3" style="font-size: 1rem;margin-top: 1rem;">© 2023 Positivus. All Rights Reserved.  </p>
+        // Update on window resize
+        window.addEventListener('resize', setFlexDirection);
+    </script>
+
+<div class="" style="background-color: #191a23; color: white; padding: 2rem; display: flex; flex-direction: column; border-top-left-radius: 45px; border-top-right-radius: 45px;">
+
+  <!-- Navigation and content -->
+  <div style="margin-bottom: 2rem;">
+    <!-- Navigation links -->
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default" style="margin-left: 35rem;">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+        <li><a class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0" style="text-decoration: underline;">About us</a></li>
+        <li><a class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0" style="text-decoration: underline;">Services</a></li>
+        <li><a class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0" style="text-decoration: underline;">Use Cases</a></li>
+        <li><a class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0" style="text-decoration: underline;">Pricing</a></li>
+        <li><a class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0" style="text-decoration: underline;">Blog</a></li>
+        <li>
+          <!-- Button for mobile view -->
+          <a class="md:hidden px-5 py-2 rounded-2xl border border-zinc-900 bg-white text-black inline-flex">
+            <h2 class="text-center text-xl font-normal leading-7">Request a quote</h2>
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
+
+  <!-- Main content -->
+  <div style="display: flex; flex-direction: row;">
+    
+    <!-- Contact info -->
+    <div style="width: 30%;">
+      <span class="text-1xl sm:text-4xl px-1.5 font-medium bg-lime rounded-md" style="color: #191a23;">Contact us</span>
+      <p class="font-normal text-center md:text-start lg:w-1/3" style="font-size: 1rem; margin-top: 1rem;">Email: info@positivus.com</p>
+      <p class="font-normal text-center md:text-start lg:w-2/3" style="font-size: 1rem; margin-top: 1rem;">Phone: 555-567-8901</p>
+      <p class="font-normal text-center md:text-start lg:w-3/3" style="font-size: 1rem; margin-top: 1rem;">Address: 1234 Main St <br> Moonstone City, Stardust State 12345</p>
+    </div>
+
+    <!-- Subscription and email buttons -->
+    <div style="flex: 1;">
+      <div style="background-color: #292a32; width: 70%; border-radius: 10px; padding: 10px; height: 80%; align-self: flex-end; margin-left: 150px; justify-content: center; align-items: center; display: flex; flex-direction: row; padding-left: 40px; padding-right: 40px;">
+        <div class="w-full justify-center md:justify-end items-center inline-flex" style="width: 150%;">
+          <button class="px-0 py-5 rounded-2xl text-center text-white border text-1xl font-normal leading-7" style="background-color: #292a32; width: 100%; margin-right: 10px;">Email</button>
+        </div>
+        <div class="w-full justify-center md:justify-end items-center inline-flex">
+          <button class="px-5 py-5 bg-lime rounded-2xl text-center text-black text-1xl font-normal leading-7">Subscribe to news</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Divider line -->
+  <div style="width: 100%; background-color: #fff; height: 0.5px; margin-top: 20px;"></div>
+
+  <!-- Copyright text -->
+  <p class="font-normal text-center md:text-start lg:w-1/3" style="font-size: 1rem; margin-top: 1rem;">© 2023 Positivus. All Rights Reserved.</p>
+
+</div>
+
+
+
+<style>
+  /* Media query for hiding the entire div on mobile screens */
+  @media (max-width: 768px) {
+    div[style*="background-color: #191a23; color: white; padding: 2rem; display: flex; flex-direction: column; border-top-left-radius: 45px; border-top-right-radius: 45px;"] {
+      display: none !important;
+    }
+  }
+</style>
+
+
+   
+    
   </main>
 
- 
+  <style>
+    /* Default style for the outer div */
+    .mobile-only {
+      display: none; /* Hide by default */
+    }
+  
+    /* Media query for mobile screens (max-width: 615px) */
+    @media screen and (max-width: 615px) {
+      .mobile-only {
+        display: block; /* Show on mobile screens */
+        background-color: #191a23;
+        color: white;
+        padding: 2rem;
+        border-radius: 10px; /* Adjust border-radius as needed */
+        margin-bottom: 0; /* Optional margin */
+      }
+    }
+  </style>
+  
+  <div class="mobile-only">
+    <!-- Content visible only on mobile screens -->
+
+    <div style="margin-bottom: 2rem;">
+      <!-- Navigation links -->
+      <div id="navbar-default" style="justify-content: center; align-items: center; align-content: center;">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-0 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0" style="align-items:center;">
+          <li><a class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0" style="text-decoration: underline;">About us</a></li>
+          <li><a class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0" style="text-decoration: underline;">Services</a></li>
+          <li><a class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0" style="text-decoration: underline;">Use Cases</a></li>
+          <li><a class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0" style="text-decoration: underline;">Pricing</a></li>
+        </ul>
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <span class="text-1xl sm:text-4xl px-1.5 font-medium bg-lime rounded-md" style="color: #191a23;">Contact us</span>
+        </div>
+        <div style="background-color: #292a32; width: 100%; border-radius: 10px; padding: 10px; height: 80%; align-self: flex-end; justify-content: center; align-items: center; display: flex; flex-direction: column; padding-left: 40px; padding-right: 40px; margin-top: 20px;">
+          <div class="w-full justify-center md:justify-end items-center inline-flex">
+            <button class="px-5 py-3 rounded-2xl text-center text-white border text-1xl font-normal leading-7" style="background-color: #292a32; width: 100%;">Email</button>
+          </div>
+          <div class="w-full justify-center md:justify-end items-center inline-flex">
+            <button class="px-5 py-3 bg-lime rounded-2xl text-center text-black text-1xl font-normal leading-7" style="width: 100%; margin-top: 10px;">Subscribe to news</button>
+          </div>
+        </div>
+        <div style="width: 100%; background-color: #fff; height: 0.5px; margin-top: 20px;"></div>
+        <p class="font-normal text-center md:text-start lg:w-1/3" style="font-size: 1rem; margin-top: 1rem;">© 2023 Positivus. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+  
  
   <script>
     const year = new Date().getFullYear();
